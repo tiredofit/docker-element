@@ -1,8 +1,8 @@
-version: '3.7'
+version: '2.4'
 services:
 
   element-app:
-    image: tiredofit/element:develop
+    image: tiredofit/element:latest
     container_name: element-app
     labels:
       - traefik.enable=true
