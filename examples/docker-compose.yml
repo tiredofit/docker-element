@@ -1,0 +1,28 @@
+version: '3.7'
+services:
+
+  element-app:
+    image: tiredofit/element:develop
+    container_name: element-app
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.element.rule=Host(`element.example.com`)
+      - traefik.http.services.element.loadbalancer.server.port=80
+    #volumes:
+      #- ./config:/config # Only if you want to use your own
+      #- ./logs:/www/logs
+    environment:
+      - TIMEZONE=America/Vancouver
+      - CONTAINER_NAME=element-app
+
+      - SETUP_TYPE=AUTO
+    networks:
+      - proxy
+      - services
+    restart: always
+
+networks:
+  proxy:
+    external: true
+  services:
+    external: true

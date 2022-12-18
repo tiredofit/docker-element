@@ -1,0 +1,12 @@
+#!/command/with-contenv bash
+
+source /assets/functions/00-container
+prepare_service
+PROCESS_NAME="element"
+
+bootstrap_filesystem
+generate_configuration
+custom_files /assets/custom "${NGINX_WEBROOT}"
+custom_scripts
+
+liftoff

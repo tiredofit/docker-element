@@ -1,0 +1,4 @@
+/build-assets/src/*
+!/build-assets/src/.empty
+/build-assets/scripts/*
+!/build-assets/scripts/.empty
