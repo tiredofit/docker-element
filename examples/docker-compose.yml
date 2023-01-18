@@ -1,6 +1,4 @@
-version: '2.4'
 services:
-
   element-app:
     image: tiredofit/element:latest
     container_name: element-app

@@ -17,7 +17,6 @@ RUN source assets/functions/00-container && \
     set -x && \
     package update && \
     package upgrade && \
-    package install yq && \
     mkdir -p "${NGINX_WEBROOT}" && \
     curl -sSL https://github.com/vector-im/element-web/releases/download/${ELEMENT_VERSION}/element-${ELEMENT_VERSION}.tar.gz | tar xvfz - --strip 1 -C ${NGINX_WEBROOT} && \
     chown -R "${NGINX_USER}":"${NGINX_GROUP}" "${NGINX_WEBROOT}" && \
