@@ -1,3 +1,9 @@
+## 0.5.0 2023-03-09 <dave at tiredofit dot ca>
+
+   ### Added
+      - Actually enable some settings that were listed in the environment variables
+
+
 ## 0.4.4 2023-02-28 <dave at tiredofit dot ca>
 
    ### Added

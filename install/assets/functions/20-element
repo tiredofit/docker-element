@@ -126,6 +126,25 @@ EOF
         yq -i '."setting_defaults"."breadcrumbs" = '"$(echo "${DEFAULT_ENABLE_BREADCRUMBS,,}")"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
         yq -i '."setting_defaults"."MessageComposerInput.showPollsButton" = '"$(echo ${DEFAULT_SHOW_POLLS_BUTTON,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
         yq -i '."setting_defaults"."MessageComposerInput.showStickersButton" = '"$(echo ${DEFAULT_SHOW_STICKERS_BUTTON,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."FTUE.userOnboardingButton" = '"$(echo ${DEFAULT_SHOW_WELCOME_CHECKLIST,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.urlPreviews" = '"$(echo ${ENABLE_URL_PREVIEW,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.feedback" = '"$(echo ${ENABLE_FEEDBACK,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.voip" = '"$(echo ${ENABLE_VOIP,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.widgets" = '"$(echo ${ENABLE_WIDGETS,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.advancedSettings" = '"$(echo ${ENABLE_ADVANCED_SETTINGS,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.shareQrCode" = '"$(echo ${ENABLE_SHARE_QR,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.shareSocial" = '"$(echo ${ENABLE_SHARE_SOCIAL,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.identityServer" = '"$(echo ${ENABLE_IDENTITY_SERVICES,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.identityServer" = '"$(echo ${ENABLE_IDENTITY_SERVICES,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.thirdPartyIdidentityServer" = '"$(echo ${ENABLE_3PID_SERVICES,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.identityServer" = '"$(echo ${ENABLE_IDENTITY_SERVICES,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.registration" = '"$(echo ${ENABLE_REGISTRATION,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.passwordReset" = '"$(echo ${ENABLE_PASSWORD_RESET,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.deactivate" = '"$(echo ${ENABLE_DEACTIVATE_ACCOUNT,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.advancedEncryption" = '"$(echo ${ENABLE_ADVANCED_ENCRYPTION,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.roomHistorySettings" = '"$(echo ${ENABLE_ROOM_HISTORY_SETTINGS,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.TimelineEnableRelativeDates" = '"$(echo ${ENABLE_RELATIVE_DATES,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
+        yq -i '."setting_defaults"."UIFeature.BulkUnverifiedSessionsReminder" = '"$(echo ${ENABLE_UNVERIFIED_SESSION_REMINDER,,})"'' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json
 
         ## VoIP
         yq -i '."element_call"."brand" = "'"$(echo "${CALL_BRAND}")"'"' "${CONFIG_PATH}"/"${CONFIG_FILE}" -o json

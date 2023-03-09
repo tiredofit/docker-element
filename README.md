@@ -59,11 +59,11 @@ Builds of the image are available on [Docker Hub](https://hub.docker.com/r/tired
 ```bash
 docker pull docker.io/tiredofdit/element:(imagetag)
 ```
-Builds of the image are also available on the [Github Container Registry](https://github.com/tiredofit/docker-element/pkgs/container/docker-element) 
- 
+Builds of the image are also available on the [Github Container Registry](https://github.com/tiredofit/docker-element/pkgs/container/docker-element)
+
 ```
 docker pull ghcr.io/tiredofit/docker-element:(imagetag)
-``` 
+```
 
 The following image tags are available along with their tagged release based on what's written in the [Changelog](CHANGELOG.md):
 
@@ -129,12 +129,12 @@ Be sure to view the following repositories to understand all the customizable op
 | `DEFAULT_ROOM_FEDERATE`              |             | `TRUE`                                                                      |
 | `DEFAULT_SHOW_POLLS_BUTTON`          |             | `FALSE`                                                                     |
 | `DEFAULT_SHOW_STICKERS_BUTTON`       |             | `FALSE`                                                                     |
+| `DEFAULT_SHOW_WELCOME_CHECKLIST`     |             | `TRUE`                                                                      |
 | `DEFAULT_THEME`                      |             | `light`                                                                     |
 | `ENABLE_3PID_LOGIN`                  |             | `FALSE`                                                                     |
 | `ENABLE_3PID_SERVICES`               |             | `TRUE`                                                                      |
 | `ENABLE_ADVANCED_ENCRYPTION`         |             | `TRUE`                                                                      |
 | `ENABLE_ADVANCED_SETTINGS`           |             | `TRUE`                                                                      |
-| `ENABLE_COMMUNITIES`                 |             | `TRUE`                                                                      |
 | `ENABLE_CUSTOM_HOME_SERVER_URL`      |             | `TRUE`                                                                      |
 | `ENABLE_DEACTIVATE_ACCOUNT`          |             | `TRUE`                                                                      |
 | `ENABLE_FEEDBACK`                    |             | `TRUE`                                                                      |
