@@ -6,7 +6,7 @@ LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
 ARG ELEMENT_VERSION
 
-ENV ELEMENT_VERSION=${ELEMENT_VERSION:-"v1.11.29"} \
+ENV ELEMENT_VERSION=${ELEMENT_VERSION:-"v1.11.30"} \
     ELEMENT_REPO_URL=https://github.com/vector-im/element-web \
     NGINX_ENABLE_CREATE_SAMPLE_HTML=FALSE \
     NGINX_SITE_ENABLED=element \
