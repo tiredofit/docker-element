@@ -5,8 +5,8 @@ bootstrap_filesystem() {
         mkdir -p "${CONFIG_PATH}"
     fi
 
-    if [ $(stat -c %U "${CONFIG_PATH}") != "${NGINX_USER}" ] ; then chown "${NGINX_USER}":"${NGINX_GROUP}" "${CONFIG_PATH}" ; fi
-    ln -sf "${CONFIG_PATH}"/"${CONFIG_FILE}" "${NGINX_WEBROOT}"/config.json
+    if [ $(stat -c %U "${CONFIG_PATH}") != "${UNIT_USER}" ] ; then chown "${UNIT_USER}":"${UNIT_GROUP}" "${CONFIG_PATH}" ; fi
+    ln -sf "${CONFIG_PATH}"/"${CONFIG_FILE}" "${UNIT_WEBROOT}"/config.json
 }
 
 generate_configuration() {
@@ -14,7 +14,7 @@ generate_configuration() {
         print_debug "Automatically generating configuration based on environment variables and defaults"
 
         if  [ ! -f "${CONFIG_PATH}"/"${CONFIG_FILE}" ] ; then
-            cat <<EOF | silent sudo -u "${NGINX_USER}" tee "${CONFIG_PATH}"/"${CONFIG_FILE}"
+            cat <<EOF | silent sudo -u "${UNIT_USER}" tee "${CONFIG_PATH}"/"${CONFIG_FILE}"
 {
     "default_server_config": {
         "m.homeserver": {

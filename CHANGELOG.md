@@ -1,3 +1,10 @@
+## 0.6.0 2023-10-10 <dave at tiredofit dot ca>
+
+   ### Added
+      - Element 1.11.46
+      - Switch to Unit Web Server from Nginx
+
+
 ## 0.5.20 2023-09-29 <dave at tiredofit dot ca>
 
    ### Added

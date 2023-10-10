@@ -1,0 +1,23 @@
+   [
+	{
+		"match": {
+			"uri": [
+				"index.html",
+				"/config",
+				"/version"
+				]
+			},
+
+			"action": {
+				"pass": "routes",
+				"response_headers": {
+					"Cache-Control": "no-cache"
+				}
+			}
+	},
+	{
+		"action": {
+			"share": "{{UNIT_WEBROOT}}/$uri"
+		}
+	}
+   ]

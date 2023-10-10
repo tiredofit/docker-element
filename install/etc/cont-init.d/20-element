@@ -6,7 +6,7 @@ PROCESS_NAME="element"
 
 bootstrap_filesystem
 generate_configuration
-custom_files /assets/custom "${NGINX_WEBROOT}"
+custom_files /assets/custom "${UNIT_WEBROOT}"
 custom_scripts
 
 liftoff

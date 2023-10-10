@@ -6,9 +6,9 @@ services:
       - traefik.enable=true
       - traefik.http.routers.element.rule=Host(`element.example.com`)
       - traefik.http.services.element.loadbalancer.server.port=80
-    #volumes:
+    volumes:
       #- ./config:/config # Only if you want to use your own
-      #- ./logs:/www/logs
+      - ./logs:/var/log/unit
     environment:
       - TIMEZONE=America/Vancouver
       - CONTAINER_NAME=element-app
