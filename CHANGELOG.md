@@ -1,3 +1,9 @@
+## 0.6.3 2023-11-13 <dave at tiredofit dot ca>
+
+   ### Added
+      - 1.11.49
+
+
 ## 0.6.2 2023-11-07 <dave at tiredofit dot ca>
 
    ### Added
