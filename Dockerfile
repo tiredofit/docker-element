@@ -1,12 +1,12 @@
 ARG DISTRO=alpine
-ARG DISTRO_VARIANT=3.18
+ARG DISTRO_VARIANT=3.19
 
 FROM docker.io/tiredofit/unit:${DISTRO}-${DISTRO_VARIANT}
 LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
 ARG ELEMENT_VERSION
 
-iENV ELEMENT_VERSION=${ELEMENT_VERSION:-"v1.11.53"} \
+ENV ELEMENT_VERSION=${ELEMENT_VERSION:-"v1.11.53"} \
     ELEMENT_REPO_URL=https://github.com/vector-im/element-web \
     UNIT_ENABLE_CREATE_SAMPLE_HTML=FALSE \
     UNIT_SITE_ENABLED=element \

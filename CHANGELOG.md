@@ -1,3 +1,9 @@
+## 0.6.8 2024-01-04 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Fix spelling issues in Dockerfile
+
+
 ## 0.6.7 2024-01-04 <dave at tiredofit dot ca>
 
    ### Added
