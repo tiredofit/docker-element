@@ -1,3 +1,9 @@
+## 0.6.19 2024-04-10 <dave at tiredofit dot ca>
+
+   ### Added
+      - Repush 0.6.18
+
+
 ## 0.6.18 2024-04-10 <dave at tiredofit dot ca>
 
    ### Added
