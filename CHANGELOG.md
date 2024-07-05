@@ -1,3 +1,9 @@
+## 0.6.25 2024-07-05 <dave at tiredofit dot ca>
+
+   ### Added
+      - Rebuild to support tiredofit/alpine:7.10.0 base image
+
+
 ## 0.6.24 2024-06-18 <dave at tiredofit dot ca>
 
    ### Added
