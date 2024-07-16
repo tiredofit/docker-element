@@ -1,3 +1,9 @@
+## 0.6.27 2024-07-16 <dave at tiredofit dot ca>
+
+   ### Added
+      - Element 1.11.71
+
+
 ## 0.6.26 2024-07-10 <dave at tiredofit dot ca>
 
    ### Added
