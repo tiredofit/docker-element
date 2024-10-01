@@ -1,4 +1,4 @@
-DARG DISTRO=alpine
+ARG DISTRO=alpine
 ARG DISTRO_VARIANT=3.20
 
 FROM docker.io/tiredofit/unit:${DISTRO}-${DISTRO_VARIANT}

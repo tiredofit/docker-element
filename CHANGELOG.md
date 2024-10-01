@@ -1,3 +1,9 @@
+## 0.6.35 2024-10-01 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Fix previous version release in Dockerfile
+
+
 ## 0.6.34 2024-10-01 <dave at tiredofit dot ca>
 
    ### Added
